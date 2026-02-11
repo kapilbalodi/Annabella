@@ -1,9 +1,5 @@
 const text = `Happy Promise Day Annabella ❤️
 
-Here’s a 100-word Promise Day note for Annabella 💖
-
----
-
 **Dear Annabella,**
 
 On this Promise Day, I want to make a promise from my heart. I promise to always respect you, 
