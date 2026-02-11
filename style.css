@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Floating hearts animation */
+body::before {
+  content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  font-size: 24px;
+  animation: float 10s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(110vh); }
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 90%;
+  z-index: 1;
+}
+
+h1 {
+  color: #ff4d6d;
+}
+
+h2 {
+  color: #e63950;
+  margin-top: -10px;
+}
+
+button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c9184a;
+  transform: scale(1.05);
+}
+
+#promiseText {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+
+#promiseText.show {
+  opacity: 1;
+}
