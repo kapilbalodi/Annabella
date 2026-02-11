@@ -7,28 +7,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .container {
   background: white;
-  padding: 30px;
+  padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  max-width: 500px;
+  max-width: 550px;
   width: 90%;
+  text-align: center;
 }
 
 h1 {
   color: #e63950;
+  margin-bottom: 20px;
 }
 
 #typingText {
-  margin-top: 20px;
-  font-size: 18px;
-  min-height: 120px;
-  white-space: pre-line;
-  border-right: 3px solid #ff4d6d;
+  font-size: 16px;
+  min-height: 180px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  text-align: left;
+  border-right: 2px solid #ff4d6d;
   animation: blink 0.8s infinite;
 }
 
@@ -39,15 +43,16 @@ h1 {
 }
 
 button {
-  margin-top: 20px;
-  padding: 12px 20px;
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 25px;
   border: none;
   border-radius: 25px;
   background: #ff4d6d;
   color: white;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 button:hover {
